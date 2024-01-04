@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: 20px;
+    margin-left: 0;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 30px;
+}
+
+#nav-bar {
+    border: 3px solid rgb(116, 84, 84);
+    margin: 20px auto;
+}
+
+#nav-bar header {
+    margin: 0 10px;
+    border-bottom: 2px solid rgb(116, 84, 84);
+}
+
+#nav-bar ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.link {
+    border-bottom: 2px solid rgb(116, 84, 84);
+}
+
+@media (max-width: 650px) {
+    body {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation on Java</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="nav-bar">
+        <header>Java Documentation</header>
+        <ul>
+            <li class="link">
+                <a href="#About_the_Java_Technology" class="nav-link">About the Java</a>
+            </li>
+            <li class="link">
+                <a href="#The _Hello World!_Application" class="nav-link">The Hello World! Application</a>
+            </li>
+            <li class="link">
+                <a href="#Object-Oriented_Programming_Concepts" class="nav-link">Object-Oriented Programming Concepts</a>
+            </li>
+            <li class="link"> 
+                <a href="#Language_Basics" class="nav-link">Language Basics</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="About_the_Java_Technology">
+            <header>About the Java Technology</header>
+            <article>
+                <p>Java technology is both a programming language and a platform.</p>
+                <p>The Java Programming Language</p>
+                <p>The Java programming language is a high-level language that can be characterized by all of the
+                    following buzzwords:</p>
+                <ul>
+                    <li>Simple</li>
+                    <li>Object Oriented</li>
+                    <li>Distributed</li>
+                    <li>Multithread</li>
+                    <li>Dynamic</li>
+                    <li>Architechture Nuetral</li>
+                    <li>Portable</li>
+                    <li>High Performance</li>
+                    <li>Robust</li>
+                    <li>Secure</li>
+                </ul>
+                <p>
+                    In the Java programming language, all source code is first written in plain text files ending with
+                    the <code>.java</code> extension. Those source files are then compiled into <code>.class</code>
+                    files by the <code> javac</code> compiler. A <code> .class</code> file does not contain code that is
+                    native to your processor; it instead contains bytecodes — the machine language of the Java Virtual
+                    Machine1 (Java VM). The <code> java</code> launcher tool then runs your application with an instance
+                    of the Java Virtual Machine.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="The _Hello World!_Application">
+            <header>The Hello World! Application</header>
+            <p>Your first application, HelloWorldApp, will simply display the greeting "world!". To create this program,
+                you will:
+            <ul>
+                <li>Create a source file with <code> .java</code> extension</li>
+                <li>Compile the source file into a .class file</li>
+                <li>Run the program</li>
+            </ul>
+            </p>
+            <pre>
+                <code>
+                    class HelloWorldApp {
+                        public static void main(String[] args) {
+                            System.out.println("Hello World!"); // Display the string.
+                        }
+                    }
+                </code>
+            </pre>
+            <p>
+                To run the program use " <code>javac HelloWorldApp.java</code> "
+            </p>
+        </section>
+        <section class="main-section" id="Object-Oriented_Programming_Concepts">
+            <header>Object-Oriented Programming Concepts</header>
+            <article>
+                <h3>What is an Object?</h3>
+                <p>An object is a software bundle of related state and behavior. Software objects are often used to model the real-world objects that you find in everyday life. This lesson explains how state and behavior are represented within an object, introduces the concept of data encapsulation, and explains the benefits of designing your software in this manner.</p>
+                <h3>What is a Class?</h3>
+                <p>A class is a blueprint or prototype from which objects are created. This section defines a class that models the state and behavior of a real-world object. It intentionally focuses on the basics, showing how even a simple class can cleanly
+                model state and behavior.</p>
+                <h3>What is an Inheritance?</h3>
+                <p>Inheritance provides a powerful and natural mechanism for organizing and structuring your software. This section explains how classes inherit state and behavior from their superclasses, and explains how to derive one class from
+                another using the simple syntax provided by the Java programming language.</p>
+                <h3>What is an Interface?</h3>
+                <p>An interface is a contract between a class and the outside world. When a class implements an interface, it promises to provide the behavior published by that interface. This section defines a simple interface and explains the necessary
+                changes for any class that implements it.</p>
+                <h3>What is a Package?</h3>
+                <p>A package is a namespace for organizing classes and interfaces in a logical manner. Placing your code into packages makes large software projects easier to manage. This section explains why this is useful, and introduces you to the
+                Application Programming Interface (API) provided by the Java platform.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Language_Basics">
+            <header>Language Basics</header>
+            <h3>Variable</h3>
+            <pre>
+                int cadence = 0;
+                int speed = 0;
+                int gear = 1;
+            </pre>
+            <h3>Literal</h3>
+            <pre>
+                boolean result = true;
+                char capitalC = 'C';
+                byte b = 100;
+                short s = 10000;
+                int i = 100000;
+            </pre>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <p>All the the document in this page taken form <a href="https://docs.oracle.com/javase/tutorial/tutorialLearningPaths.html">Java Doc 19</a></p>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for filling this survey form for zafarD.github.io website</p>
+    </header>
+    <main>
+        <form action="zafarD.github.io/survey-form" id="survey-form" method="post">
+            <fieldset>
+                <label for="name" id="name-label">
+                    Enter Your Name:
+                    <input type="text" id="name" placeholder=" Please type name" value="" required>
+                </label>
+                <label for="email" id="email-label">
+                    Enter Your Email:
+                    <input type="email" id="email" placeholder="exmaple@gmail.com" value="" required>
+                </label>
+                <label for="number" id="number-label">
+                    Enter A Number Between 18-26:
+                    <input type="number" id="number" min="18" max="26" placeholder="18" value="">
+                </label>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label for="dropdown">Where did you hear about us
+                        <select name="dropdown" id="dropdown">
+                            <option value="">(Please Select)</option>
+                            <option value="google-ad">Google ad</option>
+                            <option value="meta-ad">Meta ad</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" id="employer" name="radio-input" value="employer" checked>
+                    <label for="employer">
+                        Employer
+                    </label>
+                    <input type="radio" id="visitor" name="radio-input" value="visitor">
+                    <label for="visitor">
+                        Visitor
+                    </label>
+                </div>
+                <div>
+                    <input type="checkbox" id="subscribeNews" name="subscribe" value="subscribeNews" />
+                    <label for="subscribeNews">Subscribe to newsletter?</label>
+                    <input id="terms-and-conditions" type="checkbox" name="terms-and-conditions"
+                        value="terms-and-conditions" required /> I
+                    accept the <a href="https://zafarD.github.io/terms-of-service/">terms and conditions</a>
+                    <label for="terms-and-conditions">
+                    </label>
+                </div>
+                <div>
+                    <label for="additional-data">For more additional information: </label>
+                    <textarea name="additional-data" id="additional-data" cols="30" rows="10">
+                    </textarea>
+                </div>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </main>
+</body>
+
+</html>
